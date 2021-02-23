@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, lazy } from 'react'
+import React, { useEffect, Suspense, lazy, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { ResetCSS } from '@saltswap/uikit'
@@ -33,10 +33,34 @@ const App: React.FC = () => {
       connect('injected')
     }
   }, [account, connect])
+  const [first, setFirst] = useState(
+    window.localStorage.getItem('first') === null || window.localStorage.getItem('first') === 'null',
+  )
+  useEffect(() => {
+    window.localStorage.setItem('first', 'first')
+
+    window.addEventListener('beforeunload', (e) => {
+      window.localStorage.setItem('first', null)
+    })
+
+    Playit()
+    setTimeout(() => {
+      setFirst(false)
+    }, 5000)
+  }, [])
+
+  const Playit = () => {
+    const audio = new Audio('/images/trex.mp3')
+    audio.play()
+  }
 
   useFetchPublicData()
 
-  return (
+  return first ? (
+    <div role="button" tabIndex={0} onClick={Playit} onKeyPress={Playit}>
+      <img width="100%" src="/images/trex.gif" alt="T-rex" />
+    </div>
+  ) : (
     <Router>
       <DocumentTitle title="SaltSwap" />
       <ResetCSS />
