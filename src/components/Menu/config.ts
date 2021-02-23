@@ -6,23 +6,23 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: '/',
   },
-  {
-    label: 'Trade',
-    icon: 'TradeIcon',
-    initialOpenState: true,
-    items: [
-      {
-        label: 'Exchange',
-        href: 'https://exchange.saltswap.finance/#/swap',
-        icon: 'ExchangeIcon',
-      },
-      {
-        label: 'Liquidity',
-        href: 'https://exchange.saltswap.finance/#/pool',
-        icon: 'LiquidityIcon',
-      },
-    ],
-  },
+  // {
+  //   label: 'Trade',
+  //   icon: 'TradeIcon',
+  //   initialOpenState: true,
+  //   items: [
+  //     {
+  //       label: 'Exchange',
+  //       href: 'https://exchange.saltswap.finance/#/swap',
+  //       icon: 'ExchangeIcon',
+  //     },
+  //     {
+  //       label: 'Liquidity',
+  //       href: 'https://exchange.saltswap.finance/#/pool',
+  //       icon: 'LiquidityIcon',
+  //     },
+  //   ],
+  // },
   {
     label: 'Farms',
     icon: 'FarmIcon',

@@ -57,7 +57,8 @@ const StyledCardAccent = styled.div`
 
 const FCard = styled.div`
   align-self: baseline;
-  background: ${(props) => props.theme.card.background};
+  // background: ${(props) => props.theme.card.background};
+  background: #202125;
   border-radius: 32px;
   box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05);
   display: flex;
@@ -91,6 +92,7 @@ interface FarmCardProps {
 }
 
 const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice, ethPrice, ethereum, account }) => {
+  console.log(farm)
   const TranslateString = useI18n()
 
   const [showExpandableSection, setShowExpandableSection] = useState(false)
@@ -124,7 +126,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     : '-'
 
   const lpLabel = farm.lpSymbol
-  const earnLabel = 'SALT'
+  const earnLabel = 'DINO'
   const farmAPY =
     farm.apy &&
     farm.apy.times(new BigNumber(100)).toNumber().toLocaleString(undefined, {
@@ -135,7 +137,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
   return (
     <FCard>
-      {farm.tokenSymbol === 'SALT' && <StyledCardAccent />}
+      {/* {farm.tokenSymbol === 'DINO' && <StyledCardAccent />} */}
       <CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}

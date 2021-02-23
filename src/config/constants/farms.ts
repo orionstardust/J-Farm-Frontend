@@ -6,12 +6,12 @@ const farms: FarmConfig[] = [
     pid: 0,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'SALT',
+    lpSymbol: 'DINO',
     lpAddresses: {
       97: '0xf62e8d3EcA464C9Fa9D46f169211eF4a41E41fE8',
       56: '0x6596f770786915556C47E301cC8290aa14288d99', // SALT-BUSD
     },
-    tokenSymbol: 'SALT',
+    tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
       56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
@@ -22,12 +22,12 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 2,
-    lpSymbol: 'SALT-BUSD',
+    lpSymbol: 'DINO-BUSD',
     lpAddresses: {
       97: '0xf62e8d3EcA464C9Fa9D46f169211eF4a41E41fE8',
       56: '0x6596f770786915556C47E301cC8290aa14288d99',
     },
-    tokenSymbol: 'SALT',
+    tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
       56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
@@ -38,12 +38,12 @@ const farms: FarmConfig[] = [
   {
     pid: 2,
     risk: 2,
-    lpSymbol: 'SALT-BNB',
+    lpSymbol: 'DINO-BNB',
     lpAddresses: {
       97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
       56: '0x6284B49544c8900B4612f8450DCE8D484E5c2631',
     },
-    tokenSymbol: 'SALT',
+    tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
       56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
