@@ -1,8 +1,8 @@
-import React, {useEffect, Suspense, lazy} from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import React, { useEffect, Suspense, lazy, useState } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import {makeStyles, useTheme} from "@material-ui/core/styles";
-import {useWallet} from '@binance-chain/bsc-use-wallet'
-import {ResetCSS} from '@saltswap/uikit'
+import { useWallet } from '@binance-chain/bsc-use-wallet'
+import { ResetCSS } from '@saltswap/uikit'
 import BigNumber from 'bignumber.js'
 import {useFetchPublicData} from 'state/hooks'
 import DocumentTitle from 'DocumentTitle'
@@ -46,65 +46,88 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const App: React.FC = () => {
-    const classes = useStyles();
-    const {account, connect} = useWallet()
+  const classes = useStyles();
+  const { account, connect } = useWallet()
+  useEffect(() => {
+    if (!account && window.localStorage.getItem('accountStatus')) {
+      connect('injected')
+    }
+  }, [account, connect])
+  const [first, setFirst] = useState(
+    window.localStorage.getItem('first') === null || window.localStorage.getItem('first') === 'null',
+  )
+  useEffect(() => {
+    window.localStorage.setItem('first', 'first')
 
-    useEffect(() => {
-        if (!account && window.localStorage.getItem('accountStatus')) {
-            connect('injected')
-        }
-    }, [account, connect])
+    window.addEventListener('beforeunload', (e) => {
+      window.localStorage.setItem('first', null)
+    })
+
+    Playit()
+    setTimeout(() => {
+      setFirst(false)
+    }, 5000)
+  }, [])
+
+  const Playit = () => {
+    const audio = new Audio('/images/trex.mp3')
+    audio.play()
+  }
 
     useFetchPublicData()
 
-    return (
-        <div className={classes.root}>
-            <Router>
-                <DocumentTitle title="SaltSwap"/>
-                {/* <CssBaseline /> */}
-                <ResetCSS/>
-                <GlobalStyle/>
-                <Menu />
-                <main className={classes.content}>
-                    <div className={classes.toolbar} />
-                    <Suspense fallback={<PageLoader/>}>
-                        <Switch>
-                            <Route path="/" exact>
-                                <Home/>
-                            </Route>
-                            <Route path="/farms">
-                                <Farms/>
-                            </Route>
-                            <Route path="/pools">
-                                <Farms tokenMode/>
-                            </Route>
-                            {/* <Route path="/pools"> */}
-                            {/*  <Pools /> */}
-                            {/* </Route> */}
-                            {/* <Route path="/lottery"> */}
-                            {/*  <Lottery /> */}
-                            {/* </Route> */}
-                            {/* <Route path="/ifo"> */}
-                            {/*  <Ifos /> */}
-                            {/* </Route> */}
-                            {/* <Route path="/nft"> */}
-                            {/*  <Nft /> */}
-                            {/* </Route> */}
-                            {/* Redirect */}
-                            {/* <Route path="/staking"> */}
-                            {/*  <Redirect to="/pools" /> */}
-                            {/* </Route> */}
-                            {/* <Route path="/syrup"> */}
-                            {/*  <Redirect to="/pools" /> */}
-                            {/* </Route> */}
-                            {/* 404 */}
-                            <Route component={NotFound}/>
-                        </Switch>
-                    </Suspense>
-                </main>
-            </Router>
-        </div>
-    )
+  return first ? (
+    <div role="button" tabIndex={0} onClick={Playit} onKeyPress={Playit}>
+      <img width="100%" src="/images/trex.gif" alt="T-rex" />
+    </div>
+  ) : (
+    <div className={classes.root}>
+        <Router>
+          <DocumentTitle title="SaltSwap" />
+          {/* <CssBaseline /> */}
+          <ResetCSS />
+          <GlobalStyle />
+          <Menu />
+          <main className={classes.content}>
+            <div className={classes.toolbar} />
+            <Suspense fallback={<PageLoader />}>
+            <Switch>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+              <Route path="/farms">
+                <Farms />
+              </Route>
+              <Route path="/pools">
+                <Farms tokenMode />
+              </Route>
+              {/* <Route path="/pools"> */}
+              {/*  <Pools /> */}
+              {/* </Route> */}
+              {/* <Route path="/lottery"> */}
+              {/*  <Lottery /> */}
+              {/* </Route> */}
+              {/* <Route path="/ifo"> */}
+              {/*  <Ifos /> */}
+              {/* </Route> */}
+              {/* <Route path="/nft"> */}
+              {/*  <Nft /> */}
+              {/* </Route> */}
+              {/* Redirect */}
+              {/* <Route path="/staking"> */}
+              {/*  <Redirect to="/pools" /> */}
+              {/* </Route> */}
+              {/* <Route path="/syrup"> */}
+              {/*  <Redirect to="/pools" /> */}
+              {/* </Route> */}
+              {/* 404 */}
+              <Route component={NotFound} />
+            </Switch>
+          </Suspense>
+        </main>
+      </Router>
+    </div>
+  )
 }
 
 export default React.memo(App)
