@@ -135,6 +135,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     })
 
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
+    console.log(farmImage)
   return (
     <FCard>
       {/* {farm.tokenSymbol === 'DINO' && <StyledCardAccent />} */}

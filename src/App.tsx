@@ -1,9 +1,10 @@
-import React, { useEffect, Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { useWallet } from '@binance-chain/bsc-use-wallet'
-import { ResetCSS } from '@saltswap/uikit'
+import React, {useEffect, Suspense, lazy} from 'react'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {makeStyles, useTheme} from "@material-ui/core/styles";
+import {useWallet} from '@binance-chain/bsc-use-wallet'
+import {ResetCSS} from '@saltswap/uikit'
 import BigNumber from 'bignumber.js'
-import { useFetchPublicData } from 'state/hooks'
+import {useFetchPublicData} from 'state/hooks'
 import DocumentTitle from 'DocumentTitle'
 import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
@@ -22,63 +23,88 @@ const NotFound = lazy(() => import('./views/NotFound'))
 
 // This config is required for number formating
 BigNumber.config({
-  EXPONENTIAL_AT: 1000,
-  DECIMAL_PLACES: 80,
+    EXPONENTIAL_AT: 1000,
+    DECIMAL_PLACES: 80,
 })
 
-const App: React.FC = () => {
-  const { account, connect } = useWallet()
-  useEffect(() => {
-    if (!account && window.localStorage.getItem('accountStatus')) {
-      connect('injected')
+const useStyles = makeStyles((theme) => ({
+    root: {
+        display: "flex"
+    },
+    toolbar: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-end",
+        padding: theme.spacing(0, 1),
+        // necessary for content to be below app bar
+        ...theme.mixins.toolbar
+    },
+    content: {
+        flexGrow: 1,
+        padding: theme.spacing(3)
     }
-  }, [account, connect])
+}));
 
-  useFetchPublicData()
+const App: React.FC = () => {
+    const classes = useStyles();
+    const {account, connect} = useWallet()
 
-  return (
-    <Router>
-      <DocumentTitle title="SaltSwap" />
-      <ResetCSS />
-      <GlobalStyle />
-      <Menu>
-        <Suspense fallback={<PageLoader />}>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/farms">
-              <Farms />
-            </Route>
-            <Route path="/pools">
-              <Farms tokenMode />
-            </Route>
-            {/* <Route path="/pools"> */}
-            {/*  <Pools /> */}
-            {/* </Route> */}
-            {/* <Route path="/lottery"> */}
-            {/*  <Lottery /> */}
-            {/* </Route> */}
-            {/* <Route path="/ifo"> */}
-            {/*  <Ifos /> */}
-            {/* </Route> */}
-            {/* <Route path="/nft"> */}
-            {/*  <Nft /> */}
-            {/* </Route> */}
-            {/* Redirect */}
-            {/* <Route path="/staking"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* <Route path="/syrup"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* 404 */}
-            <Route component={NotFound} />
-          </Switch>
-        </Suspense>
-      </Menu>
-    </Router>
-  )
+    useEffect(() => {
+        if (!account && window.localStorage.getItem('accountStatus')) {
+            connect('injected')
+        }
+    }, [account, connect])
+
+    useFetchPublicData()
+
+    return (
+        <div className={classes.root}>
+            <Router>
+                <DocumentTitle title="SaltSwap"/>
+                {/* <CssBaseline /> */}
+                <ResetCSS/>
+                <GlobalStyle/>
+                <Menu />
+                <main className={classes.content}>
+                    <div className={classes.toolbar} />
+                    <Suspense fallback={<PageLoader/>}>
+                        <Switch>
+                            <Route path="/" exact>
+                                <Home/>
+                            </Route>
+                            <Route path="/farms">
+                                <Farms/>
+                            </Route>
+                            <Route path="/pools">
+                                <Farms tokenMode/>
+                            </Route>
+                            {/* <Route path="/pools"> */}
+                            {/*  <Pools /> */}
+                            {/* </Route> */}
+                            {/* <Route path="/lottery"> */}
+                            {/*  <Lottery /> */}
+                            {/* </Route> */}
+                            {/* <Route path="/ifo"> */}
+                            {/*  <Ifos /> */}
+                            {/* </Route> */}
+                            {/* <Route path="/nft"> */}
+                            {/*  <Nft /> */}
+                            {/* </Route> */}
+                            {/* Redirect */}
+                            {/* <Route path="/staking"> */}
+                            {/*  <Redirect to="/pools" /> */}
+                            {/* </Route> */}
+                            {/* <Route path="/syrup"> */}
+                            {/*  <Redirect to="/pools" /> */}
+                            {/* </Route> */}
+                            {/* 404 */}
+                            <Route component={NotFound}/>
+                        </Switch>
+                    </Suspense>
+                </main>
+            </Router>
+        </div>
+    )
 }
 
 export default React.memo(App)
