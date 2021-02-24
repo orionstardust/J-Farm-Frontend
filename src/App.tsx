@@ -83,7 +83,7 @@ const App: React.FC = () => {
   ) : (
     <div className={classes.root}>
         <Router>
-          <DocumentTitle title="SaltSwap" />
+          <DocumentTitle title="JurassicFarm" />
           {/* <CssBaseline /> */}
           <ResetCSS />
           <GlobalStyle />
