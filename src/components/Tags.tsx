@@ -2,7 +2,7 @@ import React from 'react'
 import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@saltswap/uikit'
 
 const RiskTag = ({ risk }) => (
-  <Tag variant={risk >= 3 ? 'failure' : 'success'} outline startIcon={<VerifiedIcon />}>
+  <Tag variant={risk >= 3 ? 'success' : 'success'} outline startIcon={<VerifiedIcon />}>
     Risk {risk}
   </Tag>
 )
