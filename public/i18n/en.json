@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "Total SALT burned since launch"
+        "text": "Total DINO burned since launch"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn SALT"
+        "text": "Stake LP tokens to earn DINO"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "Stake Salt, get Pepper."
+        "text": "Stake Dino, get Pepper."
       }
     },
     {
@@ -153,7 +153,7 @@
     {
       "data": {
         "stringId": 334,
-        "text": "Every time you stake and unstake SALT tokens, the contract will automatically harvest SALT rewards for you!"
+        "text": "Every time you stake and unstake DINO tokens, the contract will automatically harvest DINO rewards for you!"
       }
     },
     {
@@ -219,7 +219,7 @@
     {
       "data": {
         "stringId": 358,
-        "text": "Salt price"
+        "text": "Dino price"
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 SALT = 1 PEPPER"
+        "text": "1 DINO = 1 PEPPER"
       }
     },
     {
@@ -291,7 +291,7 @@
     {
       "data": {
         "stringId": 400,
-        "text": "PEPPER holders proportionally split 25% of SALT block emissions each day (10 SALT per block), Rewards are distributed each block."
+        "text": "PEPPER holders proportionally split 25% of DINO block emissions each day (10 DINO per block), Rewards are distributed each block."
       }
     },
     {
@@ -351,13 +351,13 @@
     {
       "data": {
         "stringId": 424,
-        "text": "%num% SALT"
+        "text": "%num% DINO"
       }
     },
     {
       "data": {
         "stringId": 426,
-        "text": "Spend SALT to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
+        "text": "Spend DINO to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
       }
     },
     {
@@ -435,19 +435,19 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% SALT Available"
+        "text": "%num% DINO Available"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "Your amount must be a multiple of 10 SALT"
+        "text": "Your amount must be a multiple of 10 DINO"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 Ticket = 10 SALT"
+        "text": "1 Ticket = 10 DINO"
       }
     },
     {
@@ -495,7 +495,7 @@
     {
       "data": {
         "stringId": 478,
-        "text": "Ticket purchases are final. Your SALT cannot be returned to you after buying tickets."
+        "text": "Ticket purchases are final. Your DINO cannot be returned to you after buying tickets."
       }
     },
     {
@@ -507,7 +507,7 @@
     {
       "data": {
         "stringId": 482,
-        "text": "SALT prizes to be claimed"
+        "text": "DINO prizes to be claimed"
       }
     },
     {
@@ -543,13 +543,13 @@
     {
       "data": {
         "stringId": 494,
-        "text": "Approve SALT"
+        "text": "Approve DINO"
       }
     },
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP holders proportionally split 40% of SALT block emissions each day (10 SALT per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 40% of DINO block emissions each day (10 DINO per block), Rewards are distributed each block."
       }
     },
     {
@@ -567,19 +567,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using SALT-BNB LP tokens, which means you need to stake equal amounts of SALT and BNB in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using DINO-BNB LP tokens, which means you need to stake equal amounts of DINO and BNB in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get SALT-BNB LP >"
+        "text": "Get DINO-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the BNB, SaltSwap burns the SALT."
+        "text": "The project gets the BNB, DinoSwap burns the DINO."
       }
     },
     {
@@ -597,7 +597,7 @@
     {
       "data": {
         "stringId": 514,
-        "text": "Launch your project with SaltSwap, Binance Smart Chain\u2019s most-used AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on BSC."
+        "text": "Launch your project with DinoSwap, Binance Smart Chain\u2019s most-used AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on BSC."
       }
     },
     {
@@ -645,25 +645,25 @@
     {
       "data": {
         "stringId": 534,
-        "text": "Salty Stats"
+        "text": "Dinoy Stats"
       }
     },
     {
       "data": {
         "stringId": 536,
-        "text": "Total SALT Supply"
+        "text": "Total DINO Supply"
       }
     },
     {
       "data": {
         "stringId": 538,
-        "text": "Total SALT Burned"
+        "text": "Total DINO Burned"
       }
     },
     {
       "data": {
         "stringId": 540,
-        "text": "New SALT per block"
+        "text": "New DINO per block"
       }
     },
     {
@@ -675,19 +675,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "SALT to Harvest"
+        "text": "DINO to Harvest"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "SALT in Wallet"
+        "text": "DINO in Wallet"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "Collecting SALT"
+        "text": "Collecting DINO"
       }
     },
     {
@@ -699,7 +699,7 @@
     {
       "data": {
         "stringId": 552,
-        "text": "SALT to Collect"
+        "text": "DINO to Collect"
       }
     },
     {
@@ -753,7 +753,7 @@
     {
       "data": {
         "stringId": 576,
-        "text": "SaltSwap"
+        "text": "DinoSwap"
       }
     },
     {
@@ -765,7 +765,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "Stake SALT to earn new tokens."
+        "text": "Stake DINO to earn new tokens."
       }
     },
     {
@@ -783,7 +783,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "SALT to burn (USD)"
+        "text": "DINO to burn (USD)"
       }
     },
     {
@@ -795,7 +795,7 @@
     {
       "data": {
         "stringId": 590,
-        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest SALT rewarSALTs for you!"
+        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest DINO rewarDINOs for you!"
       }
     },
     {
@@ -813,13 +813,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy SALT and BNB tokens"
+        "text": "Buy DINO and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get SALT-BNB LP tokens by adding SALT and BNB liquidity"
+        "text": "Get DINO-BNB LP tokens by adding DINO and BNB liquidity"
       }
     },
     {
@@ -831,7 +831,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "While the sale is live, commit your SALT-LP tokens to buy the IFO tokens"
+        "text": "While the sale is live, commit your DINO-LP tokens to buy the IFO tokens"
       }
     },
     {
@@ -867,7 +867,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "Trade in for SALT, or keep for your collection!"
+        "text": "Trade in for DINO, or keep for your collection!"
       }
     },
     {
@@ -909,7 +909,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "When you trade in this NFT to receive SALT, you will lose access to it forever!"
+        "text": "When you trade in this NFT to receive DINO, you will lose access to it forever!"
       }
     },
     {
@@ -939,7 +939,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "Winners can trade in their NFTs for a SALT value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
+        "text": "Winners can trade in their NFTs for a DINO value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
       }
     },
     {
@@ -981,7 +981,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "Trade in for SALT"
+        "text": "Trade in for DINO"
       }
     },
     {
@@ -1107,7 +1107,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "Stake LP tokens to earn SALT"
+        "text": "Stake LP tokens to earn DINO"
       }
     },
     {
@@ -1143,13 +1143,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "The SALT Lottery"
+        "text": "The DINO Lottery"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "Buy tickets with SALT"
+        "text": "Buy tickets with DINO"
       }
     },
     {
@@ -1203,7 +1203,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": "The deposit fee will be used to buyback SALT"
+        "text": "The deposit fee will be used to buyback DINO"
       }
     },
     {
@@ -1215,7 +1215,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Stake tokens to earn SALT"
+        "text": "Stake tokens to earn DINO"
       }
     },
     {
@@ -1227,7 +1227,7 @@
     {
       "data": {
         "stringId": 10004,
-        "text": "SaltSwap Farms Are Opened"
+        "text": "DinoSwap Farms Are Opened"
       }
     }
   ],

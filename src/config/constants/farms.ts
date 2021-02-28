@@ -10,12 +10,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'DINO',
     lpAddresses: {
       97: '0xf62e8d3EcA464C9Fa9D46f169211eF4a41E41fE8',
-      56: '0x6596f770786915556C47E301cC8290aa14288d99', // SALT-BUSD
+      56: '0x6ba3B7407df1926d9a3A273229FA9777f9ED0810', // DINO-BUSD
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
-      56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
+      56: '0xCe884E60dD45d578B03275D94D546622eDf55978',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -27,12 +27,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'DINO-BUSD',
     lpAddresses: {
       97: '0xf62e8d3EcA464C9Fa9D46f169211eF4a41E41fE8',
-      56: '0x6596f770786915556C47E301cC8290aa14288d99',
+      56: '0x6ba3B7407df1926d9a3A273229FA9777f9ED0810',
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
-      56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
+      56: '0xCe884E60dD45d578B03275D94D546622eDf55978',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -44,12 +44,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'DINO-BNB',
     lpAddresses: {
       97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
-      56: '0x6284B49544c8900B4612f8450DCE8D484E5c2631',
+      56: '0xFd1042E4FcC52324145aCC99bb932E1c0193fE86',
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
       97: '0x89dcddca577f3658a451775d58ea99da532263c8',
-      56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
+      56: '0xCe884E60dD45d578B03275D94D546622eDf55978',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -61,7 +61,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BERRY-BNB',
     lpAddresses: {
       97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
-      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
+      56: '0x5E3CD27F36932Bc0314aC4e2510585798C34a2fC',
     },
     tokenSymbol: 'BERRY',
     tokenAddresses: {
@@ -200,12 +200,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BERRY',
     lpAddresses: {
       97: '',
-      56: '0x3ab77e40340ab084c3e23be8e5a6f7afed9d41dc', // DAI-BUSD LP
+      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // DAI-BUSD LP
     },
     tokenSymbol: 'BERRY',
     tokenAddresses: {
       97: '',
-      56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,

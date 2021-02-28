@@ -69,9 +69,9 @@ const Home: React.FC = () => {
   const farms = useFarms()
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - getBalanceNumber(burnedBalance) : 0
 
-  let saltPerBlock = 0
-  if (farms && farms[0] && farms[0].saltPerBlock) {
-    saltPerBlock = new BigNumber(farms[0].saltPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let dinoPerBlock = 0
+  if (farms && farms[0] && farms[0].dinoPerBlock) {
+    dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   const dinosaurImg = useRef(null)
@@ -197,7 +197,7 @@ const Home: React.FC = () => {
               >
                 New DINO per block:{' '}
               </span>
-              <span>{saltPerBlock}</span>
+              <span>{dinoPerBlock}</span>
             </p>
           </div>
         </section>

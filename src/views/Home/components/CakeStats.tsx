@@ -29,29 +29,29 @@ const CakeStats = () => {
   const farms = useFarms()
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - getBalanceNumber(burnedBalance) : 0
 
-  let saltPerBlock = 0
-  if (farms && farms[0] && farms[0].saltPerBlock) {
-    saltPerBlock = new BigNumber(farms[0].saltPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let dinoPerBlock = 0
+  if (farms && farms[0] && farms[0].dinoPerBlock) {
+    dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Salty Stats')}
+          {TranslateString(534, 'Jurassic Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total SALT Supply')}</Text>
+          <Text fontSize="14px">{TranslateString(536, 'Total DINO Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total SALT Burned')}</Text>
+          <Text fontSize="14px">{TranslateString(538, 'Total DINO Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New SALT per block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'New DINO per block')}</Text>
           <Text bold fontSize="14px">
-            {saltPerBlock}
+            {dinoPerBlock}
           </Text>
         </Row>
       </CardBody>
