@@ -1,4 +1,4 @@
-# 🦖 JurassicFarm Frontend
+# 🦖 JurassicFarm Frontend [![HitCount](http://hits.dwyl.com/Jurassic-Farms/jurassic-farm-frontend.svg)](http://hits.dwyl.com/Jurassic-Farms/jurassic-farm-frontend)
 
 
 This project contains the main features of the JurassicFarm application.
