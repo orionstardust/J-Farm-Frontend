@@ -58,12 +58,12 @@ const farms: FarmConfig[] = [
     // FIXME:
     pid: 3,
     risk: 1,
-    lpSymbol: 'BERRY-BNB',
+    lpSymbol: 'SIL-BNB',
     lpAddresses: {
       97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
       56: '0x5E3CD27F36932Bc0314aC4e2510585798C34a2fC',
     },
-    tokenSymbol: 'BERRY',
+    tokenSymbol: 'SIL',
     tokenAddresses: {
       97: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // FIXME:
       56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
@@ -74,6 +74,23 @@ const farms: FarmConfig[] = [
   {
     // FIXME:
     pid: 4,
+    risk: 1,
+    lpSymbol: 'BSCPAD-BNB',
+    lpAddresses: {
+      97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
+      56: '0x5E3CD27F36932Bc0314aC4e2510585798C34a2fC',
+    },
+    tokenSymbol: 'BSCPAD',
+    tokenAddresses: {
+      97: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // FIXME:
+      56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
+  },
+  {
+    // FIXME:
+    pid: 5,
     risk: 1,
     lpSymbol: 'BUSD-BNB',
     lpAddresses: {
@@ -90,7 +107,7 @@ const farms: FarmConfig[] = [
   },
   {
     // FIXME:
-    pid: 5,
+    pid: 6,
     risk: 1,
     lpSymbol: 'CAKE-BNB',
     lpAddresses: {
@@ -107,7 +124,7 @@ const farms: FarmConfig[] = [
   },
   {
     // FIXME:
-    pid: 6,
+    pid: 7,
     risk: 1,
     lpSymbol: 'USDT-BUSD',
     lpAddresses: {
@@ -197,12 +214,30 @@ const farms: FarmConfig[] = [
     pid: 11,
     risk: 1,
     isTokenOnly: true,
-    lpSymbol: 'BERRY',
+    lpSymbol: 'SIL',
     lpAddresses: {
       97: '',
       56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // DAI-BUSD LP
     },
-    tokenSymbol: 'BERRY',
+    tokenSymbol: 'SIL',
+    tokenAddresses: {
+      97: '',
+      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    // FIXME:
+    pid: 12,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'BSCPAD',
+    lpAddresses: {
+      97: '',
+      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // DAI-BUSD LP
+    },
+    tokenSymbol: 'BSCPAD',
     tokenAddresses: {
       97: '',
       56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
