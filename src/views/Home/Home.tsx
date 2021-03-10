@@ -13,7 +13,6 @@ import { getBalanceNumber } from '../../utils/formatBalance'
 import { useTotalValue, useFarms } from '../../state/hooks'
 import { useTotalSupply, useBurnedBalance } from '../../hooks/useTokenBalance'
 import { getCakeAddress } from '../../utils/addressHelpers'
-import Dinosaur from './images/d1.png'
 import './Home.css'
 import CardValue from './components/CardValue'
 
@@ -75,7 +74,6 @@ const Home: React.FC = () => {
   }
 
   const dinosaurImg = useRef(null)
-  const totalValueTxt = useRef(null)
   useEffect(() => {
     const tl = new TimelineMax()
     // const tl = gsap.timeline();
@@ -86,28 +84,10 @@ const Home: React.FC = () => {
         duration: 0.5,
         ease: Power4.easeInOut,
       })
-      tl.to(
-        totalValueTxt.current,
-        {
-          x: 100 + window.innerWidth * 0.1,
-          opacity: 1,
-          duration: 0.5,
-          textShadow:
-            '#FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;',
-          ease: Power4.easeInOut,
-        },
-        '-=0.3',
-      )
     } else {
       tl.to(dinosaurImg.current, {
         opacity: 1,
         x: '-25%',
-      })
-      tl.set(totalValueTxt.current, {
-        opacity: 1,
-        x: 0,
-        textShadow:
-          '#FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;',
       })
     }
   })
@@ -148,7 +128,7 @@ const Home: React.FC = () => {
       <div className="dinoContainer">
         <section className="dinosaur">
           <img
-            src={Dinosaur}
+            src="/images/d1.png"
             style={{
               maxWidth: `calc(${550 - (totalValue.toNumber() % 100)}px + 25vw)`,
               width: `calc(${550 - (totalValue.toNumber() % 100)}px + 25vw)`,
@@ -157,15 +137,6 @@ const Home: React.FC = () => {
             ref={dinosaurImg}
           />
           <div className="border" />
-          <h1
-            style={{
-              display: 'none',
-            }}
-            ref={totalValueTxt}
-          >
-            Total Value Locked (TVL) <br /> <CardValue value={totalValue.toNumber()} prefix="$" decimals={2} /> <br />
-            <br /> Across all Farms and Pools
-          </h1>
         </section>
         <section className="dinosaur-info">
           <div>

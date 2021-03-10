@@ -1,10 +1,10 @@
 import React, { useEffect, useCallback, useState } from 'react'
-import { Route, useRouteMatch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
-import { Heading } from '@saltswap/uikit'
+import { Heading, ResetCSS } from '@saltswap/uikit'
 import { BLOCKS_PER_YEAR } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
@@ -16,6 +16,8 @@ import useI18n from 'hooks/useI18n'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import FarmTabButtons from './components/FarmTabButtons'
 import Divider from './components/Divider'
+import GlobalStyle from '../../style/Global'
+import 'components/me.css'
 
 export interface FarmsProps {
   tokenMode?: boolean
@@ -97,6 +99,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
+      <ResetCSS />
+      <GlobalStyle />
       <Heading as="h1" size="lg" color="primary" mb="10px" style={{ textAlign: 'center' }}>
         {tokenMode
           ? // ? TranslateString(10002, 'Stake tokens to earn SALT')
