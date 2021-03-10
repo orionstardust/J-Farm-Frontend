@@ -73,23 +73,26 @@ const Home: React.FC = () => {
     dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
-  const dinosaurImg = useRef(null)
   useEffect(() => {
     const tl = new TimelineMax()
     // const tl = gsap.timeline();
-    if (window.innerWidth >= 750) {
-      tl.to(dinosaurImg.current, {
-        x: '-25%',
-        opacity: 1,
-        duration: 0.5,
-        ease: Power4.easeInOut,
-      })
-    } else {
-      tl.to(dinosaurImg.current, {
-        opacity: 1,
-        x: '-25%',
-      })
-    }
+    // try {
+    //   if (window.innerWidth >= 750) {
+    //     tl.to('.dinosaurImg', {
+    //       x: '-25%',
+    //       opacity: 1,
+    //       duration: 0.5,
+    //       ease: Power4.easeInOut,
+    //     })
+    //   } else {
+    //     tl.to('.dinosaurImg', {
+    //       opacity: 1,
+    //       x: '-25%',
+    //     })
+    //   }
+    // } catch (e) {
+    // console.log()
+    // }
   })
 
   return (
@@ -128,13 +131,13 @@ const Home: React.FC = () => {
       <div className="dinoContainer">
         <section className="dinosaur">
           <img
+            className="dinosaurImg"
             src="/images/d1.png"
             style={{
               maxWidth: `calc(${550 - (totalValue.toNumber() % 100)}px + 25vw)`,
               width: `calc(${550 - (totalValue.toNumber() % 100)}px + 25vw)`,
             }}
             alt="Dinosaur"
-            ref={dinosaurImg}
           />
           <div className="border" />
         </section>

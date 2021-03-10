@@ -41,7 +41,6 @@
     /*max-width: calc(500px + 25vw);*/
     /*width: calc(500px + 25vw);*/
     transform: translateX(-30%);
-    opacity: 0;
 }
 
 .dinosaur h1 {
