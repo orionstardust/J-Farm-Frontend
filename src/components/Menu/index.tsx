@@ -378,7 +378,7 @@ const Menu = (props) => {
                     />
                   </svg>
                 </ListItemIcon>
-                <ListItemText primary="Blog" className={classes.iconsText}/>
+                <ListItemText primary="Medium" className={classes.iconsText}/>
               </ListItem>
               <ListItem
                 button
