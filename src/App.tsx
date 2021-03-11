@@ -54,7 +54,7 @@ const App: React.FC = () => {
     }
   }, [account, connect])
   const [first, setFirst] = useState(
-    window.localStorage.getItem('first') === null || window.localStorage.getItem('first') === 'null',
+    false,
   )
   useEffect(() => {
     window.localStorage.setItem('first', 'first')
@@ -63,10 +63,7 @@ const App: React.FC = () => {
       window.localStorage.setItem('first', null)
     })
 
-    Playit()
-    setTimeout(() => {
-      setFirst(false)
-    }, 5000)
+
   }, [])
 
   const Playit = () => {
