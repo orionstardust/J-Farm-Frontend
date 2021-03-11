@@ -321,6 +321,7 @@ const Menu = (props) => {
                     />
                   </svg>
                 </ListItemIcon>
+                <ListItemText primary="Github" className={classes.iconsText}/>
               </ListItem>
               <ListItem
                 button
@@ -355,6 +356,7 @@ const Menu = (props) => {
                     />
                   </svg>
                 </ListItemIcon>
+                <ListItemText primary="Telegram" className={classes.iconsText}/>
               </ListItem>
               <ListItem
                 button
@@ -376,6 +378,7 @@ const Menu = (props) => {
                     />
                   </svg>
                 </ListItemIcon>
+                <ListItemText primary="Blog" className={classes.iconsText}/>
               </ListItem>
               <ListItem
                 button
@@ -401,6 +404,7 @@ const Menu = (props) => {
                     />
                   </svg>
                 </ListItemIcon>
+                <ListItemText primary="Twitter" className={classes.iconsText}/>
               </ListItem>
               <ListItem button className={classes.nested} onClick={() => {
                 window.open('https://jurassicfarm491.gitbook.io/jurassic-farm/', '_blank')
@@ -413,6 +417,7 @@ const Menu = (props) => {
                         fillRule="evenodd"/>
                   </svg>
                 </ListItemIcon>
+                <ListItemText primary="Docs" className={classes.iconsText}/>
               </ListItem>
             </List>
           </Collapse>
