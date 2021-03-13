@@ -9,13 +9,13 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'DINO',
     lpAddresses: {
-      97: '0xf62e8d3EcA464C9Fa9D46f169211eF4a41E41fE8',
-      56: '0x6ba3B7407df1926d9a3A273229FA9777f9ED0810', // DINO-BUSD
+      97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+      56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d', // DINO-BUSD
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
-      97: '0x89dcddca577f3658a451775d58ea99da532263c8',
-      56: '0xCe884E60dD45d578B03275D94D546622eDf55978',
+      97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+      56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -128,8 +128,8 @@ const farms: FarmConfig[] = [
     risk: 1,
     lpSymbol: 'USDT-BUSD',
     lpAddresses: {
-      97: '0xDcE45b2dc62239DD09D6ED97Eefb9276C634602c', // FIXME:
-      56: '0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458', // https://bscscan.com/address/0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458
+      97: '0x55d398326f99059fF775485246999027B3197955', // FIXME:
+      56: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', // https://bscscan.com/address/0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458
     },
     tokenSymbol: 'USDT',
     tokenAddresses: {
@@ -188,8 +188,8 @@ const farms: FarmConfig[] = [
       97: '0x89dcddca577f3658a451775d58ea99da532263c8', // FIXME:
       56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
   {
     // FIXME:
@@ -199,15 +199,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'CAKE',
     lpAddresses: {
       97: '',
-      56: '0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458', // CAKE-BUSD LP
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', // CAKE-BUSD LP
     },
     tokenSymbol: 'CAKE',
     tokenAddresses: {
       97: '',
       56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.CAKE,
+    quoteTokenAdresses: contracts.cake,
   },
   {
     // FIXME:
@@ -217,15 +217,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SIL',
     lpAddresses: {
       97: '',
-      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // DAI-BUSD LP
+      56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB', // DAI-BUSD LP
     },
     tokenSymbol: 'SIL',
     tokenAddresses: {
       97: '',
-      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
+      56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.SIL,
+    quoteTokenAdresses: contracts.sil,
   },
   {
     // FIXME:
@@ -235,15 +235,15 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BSCPAD',
     lpAddresses: {
       97: '',
-      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830', // DAI-BUSD LP
+      56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', // DAI-BUSD LP
     },
     tokenSymbol: 'BSCPAD',
     tokenAddresses: {
       97: '',
-      56: '0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830',
+      56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.BSCPAD,
+    quoteTokenAdresses: contracts.bscpad,
   },
   // { // FIXME:
   //     pid: 12,

@@ -264,6 +264,7 @@ const Menu = (props) => {
             </ListItemIcon>
             <ListItemText primary="Farms" className={classes.iconsText} />
           </ListItem>
+
           <ListItem
             button
             onClick={() => {
@@ -283,7 +284,26 @@ const Menu = (props) => {
                 P
               </div>
             </ListItemIcon>
-            <ListItemText primary="Dino Pools" className={classes.iconsText} />
+            <ListItemText primary="Pools" className={classes.iconsText} />
+          </ListItem>
+          <ListItem
+            button
+            onClick={() => {
+              window.open('https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9510b145010f0eac5a3aefd9a5a07a0a14b2241d', '_blank')
+            }}
+          >
+            <ListItemIcon className={classes.icons}>
+              <div
+                style={{
+                  textAlign: 'center',
+                  width: '24px',
+                  height: '24px',
+                }}
+              >
+                <img alt='pancakeswap' src="/images/pancakeswap.png"/>
+              </div>
+            </ListItemIcon>
+            <ListItemText primary="Trade" className={classes.iconsText} />
           </ListItem>
           <ListItem button onClick={handleMoreClick}>
             <ListItemIcon className={classes.icons}>
