@@ -13,12 +13,12 @@ const config: MenuEntry[] = [
   //   items: [
   //     {
   //       label: 'Exchange',
-  //       href: 'https://exchange.saltswap.finance/#/swap',
+  //       href: 'https://exchange.pancakeswap.finance/#/swap',
   //       icon: 'ExchangeIcon',
   //     },
   //     {
   //       label: 'Liquidity',
-  //       href: 'https://exchange.saltswap.finance/#/pool',
+  //       href: 'https://exchange.pancakeswap.finance/#/pool',
   //       icon: 'LiquidityIcon',
   //     },
   //   ],
