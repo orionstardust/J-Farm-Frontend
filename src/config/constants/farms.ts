@@ -179,16 +179,18 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'BNB',
     lpAddresses: {
-      97: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+      97: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f',
       
     },
     tokenSymbol: 'BNB',
     tokenAddresses: {
-      97: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', // FIXME:
+      97: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 
+      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', // FIXME:
        // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
   {
     // FIXME:
@@ -197,12 +199,14 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'CAKE',
     lpAddresses: {
-      97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-       // CAKE-BUSD LP
+      97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 
+      56: '0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6',
+       // CAKE-BNB LP
     },
     tokenSymbol: 'CAKE',
     tokenAddresses: {
-      97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+      97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 
+      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
 
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -215,12 +219,14 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'SIL',
     lpAddresses: {
-      97: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB', 56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
+      97: '0xaE1AF9510049138e7a1927B741A542a8bcc78B0D', 
+      56: '0xaE1AF9510049138e7a1927B741A542a8bcc78B0D',
 
     },
     tokenSymbol: 'SIL',
     tokenAddresses: {
-      97: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB', 56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
+      97: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB', 
+      56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
 
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -233,12 +239,14 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'BSCPAD',
     lpAddresses: {
-      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', 56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
+      97: '0x1e47DA535D9E96E2F9348d00c18fBe967566bc28', 
+      56: '0x1e47DA535D9E96E2F9348d00c18fBe967566bc28',
        // DAI-BUSD LP
     },
     tokenSymbol: 'BSCPAD',
     tokenAddresses: {
-      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', 56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
+      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', 
+      56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
 
     },
     quoteTokenSymbol: QuoteToken.BNB,
