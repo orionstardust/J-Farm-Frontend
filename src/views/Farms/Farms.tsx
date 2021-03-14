@@ -110,7 +110,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       </Heading>
       <Heading as="h2" color="secondary" mb="20px" style={{ textAlign: 'center' }}>
         {/* {TranslateString(10000, 'Deposit Fee will be used to buyback SALT')} */}
-        Deposit Fee will be used to buyback DINO
+        3% of Deposit Fees will Be Used To Buy Back DINO and Create + Burn LPs To Create An Ever-Growing Price Floor
       </Heading>
       <FarmTabButtons stackedOnly={stackedOnly} setStackedOnly={setStackedOnly} />
       <div>
