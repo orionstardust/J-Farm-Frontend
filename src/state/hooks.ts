@@ -69,7 +69,7 @@ export const usePoolFromPid = (sousId): Pool => {
 
 export const usePriceBnbBusd = (): BigNumber => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const pid = 3 // BUSD-BNB LP
+  const pid = 4 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
