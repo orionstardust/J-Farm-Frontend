@@ -33,8 +33,8 @@ const farms: FarmConfig[] = [
       97: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99', 56: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99',
       
     },
-    quoteTokenSymbol: QuoteToken.DINO,
-    quoteTokenAdresses: contracts.dino,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
   {
     // FIXME:
@@ -50,8 +50,8 @@ const farms: FarmConfig[] = [
       97: '0xE6BDEa4578329b908461EB76A6705fa18b22a1C6', 56: '0xE6BDEa4578329b908461EB76A6705fa18b22a1C6',
       
     },
-    quoteTokenSymbol: QuoteToken.DINO,
-    quoteTokenAdresses: contracts.dino,
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
   },
   {
     // FIXME:
@@ -67,8 +67,8 @@ const farms: FarmConfig[] = [
       97: '0x51509ef5ed3fa020b6011ab10e0383e089fd4823', 56: '0x51509ef5ed3fa020b6011ab10e0383e089fd4823', // FIXME:
        // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.SIL,
-    quoteTokenAdresses: contracts.sil, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
@@ -84,8 +84,8 @@ const farms: FarmConfig[] = [
       97: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', 56: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', // FIXME:
        // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.CAKE,
-    quoteTokenAdresses: contracts.cake, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
@@ -101,8 +101,8 @@ const farms: FarmConfig[] = [
       97: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', 56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // FIXME:
        // https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
