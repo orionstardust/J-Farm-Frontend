@@ -54,14 +54,17 @@ const App: React.FC = () => {
     }
   }, [account, connect])
   const [first, setFirst] = useState(
-    false,
+    window.localStorage.getItem('first') === null || window.localStorage.getItem('first') === 'null'
   )
   useEffect(() => {
-    window.localStorage.setItem('first', 'first')
 
-    window.addEventListener('beforeunload', (e) => {
-      window.localStorage.setItem('first', null)
-    })
+    if (window.localStorage.getItem('first') !== 'false') {
+      Playit()
+    setTimeout(() => {
+      setFirst(false)
+    }, 5000)
+    }
+    window.localStorage.setItem('first', 'false')
 
 
   }, [])
