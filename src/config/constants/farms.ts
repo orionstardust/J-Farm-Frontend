@@ -9,8 +9,8 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpSymbol: 'DINO',
     lpAddresses: {
-      97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
-      56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+      97: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99',
+      56: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99',
       // DINO
     },
     tokenSymbol: 'DINO',
@@ -18,8 +18,8 @@ const farms: FarmConfig[] = [
       97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
       56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
     },
-    quoteTokenSymbol: QuoteToken.DINO,
-    quoteTokenAdresses: contracts.dino,
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
   },
   {
     // FIXME:

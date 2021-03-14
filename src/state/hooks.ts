@@ -71,7 +71,6 @@ export const usePriceBnbBusd = (): BigNumber => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const pid = 4 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
-  console.log('bnbbusd farm', farm)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
@@ -93,13 +92,14 @@ export const useTotalValue = (): BigNumber => {
   const ethPrice = usePriceEthBusd()
   const saltPrice = usePriceSaltBusd()
 
-  console.log('bnb value', bnbPrice.toString())
-  console.log('eth value', ethPrice.toString())
-  console.log('salt value', saltPrice.toString())
+  // console.log('bnb value', bnbPrice.toString())
+  // console.log('eth value', ethPrice.toString())
+  // console.log('salt value', saltPrice.toString())
 
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
     const farm = farms[i]
+    // if (farm.lpSymbol !== 'DINO') {
     if (farm.lpTotalInQuoteToken) {
       let val
       if (farm.quoteTokenSymbol === QuoteToken.BNB) {
@@ -111,9 +111,14 @@ export const useTotalValue = (): BigNumber => {
       } else {
         val = farm.lpTotalInQuoteToken
       }
+
+      // console.log(`farm ${farm.lpSymbol} is ${val}`)
       value = value.plus(val)
     }
+    // } else {
+    //   console.log(`lpTotalInQuoteToken is ${farm.lpTotalInQuoteToken}`)
+    // }
   }
-  console.log('total value', value)
+  // console.log('total value', value.toString())
   return value
 }
