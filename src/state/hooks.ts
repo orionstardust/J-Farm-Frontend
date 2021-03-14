@@ -71,10 +71,11 @@ export const usePriceBnbBusd = (): BigNumber => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const pid = 4 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
+  console.log('bnbbusd farm', farm)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
-export const usePriceEthBusd = (): BigNumber => new BigNumber(1966)
+export const usePriceEthBusd = (): BigNumber => new BigNumber(1800)
 
 export const usePriceSaltBusd = (): BigNumber => {
   // const pid = 1 // CAKE-BNB LP
@@ -91,6 +92,10 @@ export const useTotalValue = (): BigNumber => {
   const bnbPrice = usePriceBnbBusd()
   const ethPrice = usePriceEthBusd()
   const saltPrice = usePriceSaltBusd()
+
+  console.log('bnb value', bnbPrice.toString())
+  console.log('eth value', ethPrice.toString())
+  console.log('salt value', saltPrice.toString())
 
   let value = new BigNumber(0)
   for (let i = 0; i < farms.length; i++) {
@@ -109,5 +114,6 @@ export const useTotalValue = (): BigNumber => {
       value = value.plus(val)
     }
   }
+  console.log('total value', value)
   return value
 }

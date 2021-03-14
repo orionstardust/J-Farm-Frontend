@@ -78,6 +78,7 @@ const fetchFarms = async () => {
 
         // Amount of token in the LP that are considered staking (i.e amount of token * lp ratio)
         tokenAmount = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals)).times(lpTokenRatio)
+
         const quoteTokenAmount = new BigNumber(quoteTokenBlanceLP)
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
@@ -88,6 +89,9 @@ const fetchFarms = async () => {
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP))
         }
       }
+
+      // console.log(`tokenAmount for ${farmConfig.lpSymbol} is ${tokenAmount} and quoteTokenAmount is ${quoteTokenAmount} and tokenPriceVsQuote is ${tokenPriceVsQuote}`)
+      // console.log(`tokenAmount for ${farmConfig.lpSymbol} is ${tokenAmount} and tokenPriceVsQuote is ${tokenPriceVsQuote}`)
 
       const [info, totalAllocPoint, poolInfo, dinoPerBlock] = await multicall(masterchefABI, [
         {

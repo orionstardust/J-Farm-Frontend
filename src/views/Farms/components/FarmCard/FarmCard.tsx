@@ -92,7 +92,7 @@ interface FarmCardProps {
 }
 
 const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice, ethPrice, ethereum, account }) => {
-  console.log(farm)
+  // console.log(farm)
   const TranslateString = useI18n()
 
   const [showExpandableSection, setShowExpandableSection] = useState(false)
@@ -135,7 +135,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     })
 
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
-  console.log(farmImage)
+  // console.log(farmImage)
   return (
     <FCard>
       {/* {farm.tokenSymbol === 'DINO' && <StyledCardAccent />} */}
