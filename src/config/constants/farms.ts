@@ -93,16 +93,18 @@ const farms: FarmConfig[] = [
     risk: 1,
     lpSymbol: 'BUSD-BNB',
     lpAddresses: {
-      97: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', 56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // FIXME:
+      97: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', 
+      56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // FIXME:
       
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
-      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56', 56: '0xe9e7cea3dedca5984780bafc599bd69add087d56', // FIXME:
+      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56', 
+      56: '0xe9e7cea3dedca5984780bafc599bd69add087d56', // FIXME:
        // https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
