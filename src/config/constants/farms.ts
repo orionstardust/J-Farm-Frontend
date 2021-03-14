@@ -17,8 +17,8 @@ const farms: FarmConfig[] = [
       97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
       56: '',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.DINO,
+    quoteTokenAdresses: contracts.dino,
   },
   {
     // FIXME:
@@ -34,8 +34,8 @@ const farms: FarmConfig[] = [
       97: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99',
       56: '',
     },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
+    quoteTokenSymbol: QuoteToken.DINO,
+    quoteTokenAdresses: contracts.dino,
   },
   {
     // FIXME:
@@ -51,8 +51,8 @@ const farms: FarmConfig[] = [
       97: '0xE6BDEa4578329b908461EB76A6705fa18b22a1C6',
       56: '',
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
+    quoteTokenSymbol: QuoteToken.DINO,
+    quoteTokenAdresses: contracts.dino,
   },
   {
     // FIXME:
@@ -68,8 +68,8 @@ const farms: FarmConfig[] = [
       97: '0x51509ef5ed3fa020b6011ab10e0383e089fd4823', // FIXME:
       56: '', // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.SIL,
+    quoteTokenAdresses: contracts.sil, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
@@ -85,8 +85,8 @@ const farms: FarmConfig[] = [
       97: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', // FIXME:
       56: '', // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
+    quoteTokenSymbol: QuoteToken.CAKE,
+    quoteTokenAdresses: contracts.cake, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
@@ -102,7 +102,7 @@ const farms: FarmConfig[] = [
       97: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // FIXME:
       56: '', // https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
     },
-    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd, // FIXME: use contracts.bnb instead
   },
   {
@@ -120,7 +120,7 @@ const farms: FarmConfig[] = [
       56: '', // https://bscscan.com/address/0x2170ed0880ac9a755fd29b2688956bd959f933f8
     },
     quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.eth, // FIXME: use contracts.bnb instead
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
   {
     // FIXME:
@@ -152,8 +152,8 @@ const farms: FarmConfig[] = [
   //     97: '0x89dcddca577f3658a451775d58ea99da532263c8', // FIXME:
   //     56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', // https://bscscan.com/address/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82
   //   },
-  //   quoteTokenSymbol: QuoteToken.BNB,
-  //   quoteTokenAdresses: contracts.wbnb,
+  //   quoteTokenSymbol: QuoteToken.CAKE,
+  //   quoteTokenAdresses: contracts.cake,
   // },
   {
     // FIXME:
