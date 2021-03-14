@@ -30,7 +30,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
-      97: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99', 56: '0xa0d2502Ac6d862596325Cd1B724589fe14902D99',
+      97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d', 56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
       
     },
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -47,7 +47,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'DINO',
     tokenAddresses: {
-      97: '0xE6BDEa4578329b908461EB76A6705fa18b22a1C6', 56: '0xE6BDEa4578329b908461EB76A6705fa18b22a1C6',
+      97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d', 56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
       
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -64,7 +64,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'SIL',
     tokenAddresses: {
-      97: '0x51509ef5ed3fa020b6011ab10e0383e089fd4823', 56: '0x51509ef5ed3fa020b6011ab10e0383e089fd4823', // FIXME:
+      97: '0xc66e4de0d9b4f3cb3f271c37991fe62f154471eb', 56: '0xc66e4de0d9b4f3cb3f271c37991fe62f154471eb', // FIXME:
        // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -81,7 +81,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'BSCPAD',
     tokenAddresses: {
-      97: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', 56: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', // FIXME:
+      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', 56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', // FIXME:
        // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -98,7 +98,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
-      97: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', 56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f', // FIXME:
+      97: '0xe9e7cea3dedca5984780bafc599bd69add087d56', 56: '0xe9e7cea3dedca5984780bafc599bd69add087d56', // FIXME:
        // https://bscscan.com/address/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -115,7 +115,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'CAKE',
     tokenAddresses: {
-      97: '0xa527a61703d82139f8a06bc30097cc9caa2df5a6', 56: '0xa527a61703d82139f8a06bc30097cc9caa2df5a6', // FIXME:
+      97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', // FIXME:
        // https://bscscan.com/address/0x2170ed0880ac9a755fd29b2688956bd959f933f8
     },
     quoteTokenSymbol: QuoteToken.BNB,
@@ -132,7 +132,7 @@ const farms: FarmConfig[] = [
     },
     tokenSymbol: 'USDT',
     tokenAddresses: {
-      97: '0xc15fa3E22c912A276550F3E5FE3b0Deb87B55aCd', 56: '0xc15fa3E22c912A276550F3E5FE3b0Deb87B55aCd', // FIXME:
+      97: '0x55d398326f99059ff775485246999027b3197955', 56: '0x55d398326f99059ff775485246999027b3197955', // FIXME:
        // https://bscscan.com/address/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82
     },
     quoteTokenSymbol: QuoteToken.BUSD,
