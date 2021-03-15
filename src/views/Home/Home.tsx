@@ -1,10 +1,15 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 import styled from 'styled-components'
-import { Heading, BaseLayout, Text } from '@saltswap/uikit'
+import { Heading, BaseLayout, Text, Button } from '@saltswap/uikit'
+import { useWallet } from '@binance-chain/bsc-use-wallet'
+
+import { useAllHarvest } from 'hooks/useHarvest'
+import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
 import BigNumber from 'bignumber.js/bignumber'
 import { TimelineMax, Power4 } from 'gsap'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
+import UnlockButton from 'components/UnlockButton'
 import FarmStakingCard from './components/FarmStakingCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
@@ -60,18 +65,41 @@ const Cards = styled(BaseLayout)`
   }
 `
 
+const Actions = styled.div`
+  margin-top: 24px;
+`
+
+
 const Home: React.FC = () => {
   const TranslateString = useI18n()
   const totalValue = useTotalValue()
   const totalSupply = useTotalSupply()
+  const { account } = useWallet()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - getBalanceNumber(burnedBalance) : 0
+  const [pendingTx, setPendingTx] = useState(false)
+
+  const farmsWithBalance = useFarmsWithBalance()
+  const balancesWithValue = farmsWithBalance.filter((balanceType) => balanceType.balance.toNumber() > 0)
 
   let dinoPerBlock = 0
   if (farms && farms[0] && farms[0].dinoPerBlock) {
     dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
+
+  const { onReward } = useAllHarvest(balancesWithValue.map((farmWithBalance) => farmWithBalance.pid))
+
+  const harvestAllFarms = useCallback(async () => {
+    setPendingTx(true)
+    try {
+      await onReward()
+    } catch (error) {
+      // TODO: find a way to handle when the user rejects transaction or it fails
+    } finally {
+      setPendingTx(false)
+    }
+  }, [onReward])
 
   useEffect(() => {
     const tl = new TimelineMax()
@@ -175,6 +203,22 @@ const Home: React.FC = () => {
             </p>
           </div>
         </section>
+        <Actions>
+          {account ? (
+            <Button
+              id="harvest-all"
+              disabled={balancesWithValue.length <= 0 || pendingTx}
+              onClick={harvestAllFarms}
+              fullWidth
+            >
+              {pendingTx
+                ? TranslateString(548, 'Collecting DINO')
+                : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
+            </Button>
+          ) : (
+            <UnlockButton fullWidth />
+          )}
+        </Actions>
       </div>
       {/* <div> */}
       {/* <Cards> */}
