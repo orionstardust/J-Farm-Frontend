@@ -13,7 +13,7 @@ const Input: React.FC<InputProps> = ({ endAdornment, onChange, placeholder, star
   <StyledInputWrapper>
     {!!startAdornment && startAdornment}
     <StyledInput placeholder={placeholder} value={value} onChange={onChange} />
-    {!!endAdornment && endAdornment}
+    {endAdornment}
   </StyledInputWrapper>
 )
 
