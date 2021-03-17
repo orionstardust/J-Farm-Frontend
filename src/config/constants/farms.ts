@@ -293,6 +293,179 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+  {
+    // FIXME:
+    pid: 17,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'BTCB',
+    lpAddresses: {
+      97: '',
+      56: '0x7561EEe90e24F3b348E1087A005F78B4c8453524',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'BTCB',
+    tokenAddresses: {
+      97: '',
+      56: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 18,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'ETH',
+    lpAddresses: {
+      97: '',
+      56: '0x70D8929d04b60Af4fb9B58713eBcf18765aDE422',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'ETH',
+    tokenAddresses: {
+      97: '',
+      56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+
+  {
+    // FIXME:
+    pid: 19,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'DOT',
+    lpAddresses: {
+      97: '',
+      56: '0xbCD62661A6b1DEd703585d3aF7d7649Ef4dcDB5c',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'DOT',
+    tokenAddresses: {
+      97: '',
+      56: '0x7083609fCE4d1d8Dc0C979AAb8c869Ea2C873402',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+
+
+  {
+    // FIXME:
+    pid: 20,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'NFI',
+    lpAddresses: {
+      97: '',
+      56: '0xAB51b64010Ee0BA562F1F664274a73A47Ce0D2e3',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'NFI',
+    tokenAddresses: {
+      97: '',
+      56: '0x43f001914c7d347d152f296e8539086fe49f8bd6',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 21,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'DAI',
+    lpAddresses: {
+      97: '',
+      56: '0x56C77d59E82f33c712f919D09FcedDf49660a829',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'DAI',
+    tokenAddresses: {
+      97: '',
+      56: '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 22,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'GOOSE',
+    lpAddresses: {
+      97: '',
+      56: '0xd1B59D11316E87C3a0A069E80F590BA35cD8D8D3',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'GOOSE',
+    tokenAddresses: {
+      97: '',
+      56: '0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 23,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'SALT',
+    lpAddresses: {
+      97: '',
+      56: '0x6284B49544c8900B4612f8450DCE8D484E5c2631',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'SALT',
+    tokenAddresses: {
+      97: '',
+      56: '0x2849b1aE7E04A3D9Bc288673A92477CF63F28aF4',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 24,
+    risk: 1,
+    isTokenOnly: true,
+    lpSymbol: 'FULLSAIL',
+    lpAddresses: {
+      97: '',
+      56: '0x09D57cBc545e302CC3aAeD8eEaA0EC7bf45b7165',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'FULLSAIL',
+    tokenAddresses: {
+      97: '',
+      56: '0x8148b58393f00b4b379cbeb8018d3445e0b636a0',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
+  {
+    // FIXME:
+    pid: 25,
+    risk: 1,
+    lpSymbol: 'FUEL-BNB',
+    lpAddresses: {
+      97: '',
+      56: '0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a',
+      // DAI-BUSD LP
+    },
+    tokenSymbol: 'FUEL/BNB',
+    tokenAddresses: {
+      97: '',
+      56: '0x3763A3263CEaca5e7Cc1Bc22A43920bAd9f743Cd',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },
 
   // { // FIXME:
   //     pid: 12,
