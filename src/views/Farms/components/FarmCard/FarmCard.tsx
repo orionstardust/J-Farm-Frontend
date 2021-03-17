@@ -150,13 +150,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <Flex justifyContent="space-between" alignItems="center">
           <Text>{TranslateString(352, 'APR')}:</Text>
           <Text bold style={{ display: 'flex', alignItems: 'center' }}>
-            {farm.apy ? (
-              <>
-                {farmAPY}%
-              </>
-            ) : (
-              <Skeleton height={24} width={80} />
-            )}
+            {farm.apy ? <>{farmAPY}%</> : <Skeleton height={24} width={80} />}
           </Text>
         </Flex>
       )}

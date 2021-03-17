@@ -69,7 +69,6 @@ const Actions = styled.div`
   margin-top: 24px;
 `
 
-
 const Home: React.FC = () => {
   const TranslateString = useI18n()
   const totalValue = useTotalValue()

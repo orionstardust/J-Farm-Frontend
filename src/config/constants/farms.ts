@@ -91,6 +91,60 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
+
+  {
+    pid: 15,
+    risk: 1,
+    lpSymbol: 'ALICE-BNB',
+    lpAddresses: {
+      97: '',
+      56: '0xe022baa3E5E87658f789c9132B10d7425Fd3a389', // FIXME:
+    },
+    tokenSymbol: 'BSCPAD',
+    tokenAddresses: {
+      97: '',
+      56: '0xAC51066d7bEC65Dc4589368da368b212745d63E8', // FIXME:
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
+  },
+
+  {
+    pid: 16,
+    risk: 1,
+    lpSymbol: 'BTCB-BNB',
+    lpAddresses: {
+      97: '',
+      56: '0x7561EEe90e24F3b348E1087A005F78B4c8453524', // FIXME:
+    },
+    tokenSymbol: 'BSCPAD',
+    tokenAddresses: {
+      97: '',
+      56: '0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c', // FIXME:
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
+  },
+
+  {
+    // FIXME:
+    pid: 6,
+    risk: 1,
+    lpSymbol: 'BSCPAD-BNB',
+    lpAddresses: {
+      97: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28',
+      56: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', // FIXME:
+    },
+    tokenSymbol: 'BSCPAD',
+    tokenAddresses: {
+      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
+      56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', // FIXME:
+      // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
+  },
+
   {
     // FIXME:
     pid: 4,
@@ -257,6 +311,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
+
   // { // FIXME:
   //     pid: 12,
   //     risk: 1,
