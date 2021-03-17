@@ -44,9 +44,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   const [stackedOnly, setStackedOnly] = useState(false)
 
-  const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.pid !== 14 && farm.pid !== 11)
+  const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.pid !== 14 && farm.pid !== 11 && farm.pid !== 24  && farm.pid !== 25)
   const inactiveFarms = farmsLP.filter(
-    (farm) => !!farm.isTokenOnly === !!tokenMode && (farm.pid === 14 || farm.pid === 11),
+    (farm) => !!farm.isTokenOnly === !!tokenMode && (farm.pid === 14 || farm.pid === 11  || farm.pid === 24  || farm.pid === 25),
   )
   const stackedOnlyFarms = activeFarms.filter(
     (farm) => farm.userData && new BigNumber(farm.userData.stakedBalance).isGreaterThan(0),
