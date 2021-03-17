@@ -126,24 +126,6 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
   },
 
-  {
-    // FIXME:
-    pid: 6,
-    risk: 1,
-    lpSymbol: 'BSCPAD-BNB',
-    lpAddresses: {
-      97: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28',
-      56: '0x1e47da535d9e96e2f9348d00c18fbe967566bc28', // FIXME:
-    },
-    tokenSymbol: 'BSCPAD',
-    tokenAddresses: {
-      97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
-      56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700', // FIXME:
-      // https://bscscan.com/address/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb, // FIXME: use contracts.bnb instead
-  },
 
   {
     // FIXME:
