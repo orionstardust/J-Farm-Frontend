@@ -1,4 +1,4 @@
-# 🦖 Frontend Project [![HitCount](http://hits.dwyl.com/Jurassic-Farms/jurassic-farm-frontend.svg)]
+# 🦖 Frontend Project
 
 
 This project contains the main features of the Farm application.
